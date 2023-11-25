@@ -40,7 +40,7 @@ export default function Login ({ navigation }) {
             />
 
             <View style={{alignItems: 'center',}}>
-              <Button mode="elevated" style={styles.botao}>
+              <Button mode="elevated" onPress={() => navigation.navigate('Home')} style={styles.botao}>
                 <Text style={{color: '#FFF',}}>Login</Text>
               </Button>
             </View>
