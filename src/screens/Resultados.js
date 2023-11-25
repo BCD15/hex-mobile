@@ -26,8 +26,11 @@ export default function Resultados ({ navigation }) {
         <View style={styles.main}>
             <Text style={{color: '#fff', fontSize: 20, fontWeight: 'bold', marginTop: -90,}}>Resultados</Text>
                 <View style={styles.card}>
-                  <Image source={trofeu}>
-                  </Image>
+                  <ImageBackground source={trofeu}>
+                    <Text>
+                      Equipe Vencedora
+                    </Text>
+                  </ImageBackground>
                 </View>
                 <View style={styles.cardIntegrantes}>
                     <View style={{alignItems: 'center',}}>
@@ -43,17 +46,13 @@ export default function Resultados ({ navigation }) {
                 </View>
                 <View style={styles.cardIntegrantes}>
                     <View style={{alignItems: 'center',}}>
-                        <Text style={{fontWeight: 'bold', fontSize: 20,}}>Avaliador</Text>
+                        <Text style={{fontWeight: 'bold', fontSize: 20,}}>Nota final</Text>
                     </View>
-                    <Text style={{fontSize: 17, marginLeft: 10, marginRight: 10, marginBottom: 5, marginTop: 5,}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis diam pulvinar, 
-                        tempus sem ac, efficitur magna. Mauris ac tincidunt elit, a pharetra sem. Sed id quam ligula. 
-                        Ut sollicitudin interdum purus.
-                    </Text>
+                    <View style={{alignItems: 'center',}}>
+                        <Text style={{fontWeight: 'bold', fontSize: 20,}}>9,5</Text>
+                    </View>
                 </View>
-
         </View>
-
       </ImageBackground>
     </View>
   );
