@@ -6,7 +6,7 @@ import backgroundFoto from '../../assets/whiteHex.png'
 import PerfilIcon from '../../assets/perfilIcon.png'
 import SetaIcon from '../../assets/seta.png'
 import Rectangle from '../../assets/Rectangle12.png'
-import trofeu from '../../assets/trofeu.jpeg'
+import trofeu from '../../assets/trofeu.png'
 
 export default function Resultados ({ navigation }) {
   return (
@@ -26,11 +26,12 @@ export default function Resultados ({ navigation }) {
         <View style={styles.main}>
             <Text style={{color: '#fff', fontSize: 20, fontWeight: 'bold', marginTop: -90,}}>Resultados</Text>
                 <View style={styles.card}>
-                  <ImageBackground source={trofeu}>
-                    <Text>
-                      Equipe Vencedora
-                    </Text>
-                  </ImageBackground>
+                    <View style={{alignItems: 'center',}}>
+                        <Text style={{fontWeight: 'bold', fontSize: 20,}}>Equipe Vencedora</Text>
+                    </View>
+                    <View style={{alignItems: 'center',}}>
+                        <Image source={trofeu} style={{width: 80, height: 80,}}></Image>
+                    </View>
                 </View>
                 <View style={styles.cardIntegrantes}>
                     <View style={{alignItems: 'center',}}>
@@ -42,14 +43,14 @@ export default function Resultados ({ navigation }) {
                     <Text style={{fontSize: 17, marginLeft: 10, marginBottom: 5, marginTop: 5,}}>Particpante</Text>
                 </View>
                 <View style={styles.card}>
-                  <Image source={Rectangle}></Image>
+                  <Image source={Rectangle} style={{width: '102%', height: '100%', borderRadius: 15,}}></Image>
                 </View>
-                <View style={styles.cardIntegrantes}>
+                <View style={styles.card}>
                     <View style={{alignItems: 'center',}}>
                         <Text style={{fontWeight: 'bold', fontSize: 20,}}>Nota final</Text>
                     </View>
                     <View style={{alignItems: 'center',}}>
-                        <Text style={{fontWeight: 'bold', fontSize: 20,}}>9,5</Text>
+                        <Text style={{fontWeight: 'bold', fontSize: 40,}}>9,5</Text>
                     </View>
                 </View>
         </View>
@@ -108,8 +109,16 @@ const styles = StyleSheet.create({
 
   cardIntegrantes: {
     backgroundColor: '#D9D9D9',
-    width: '85%',
-    height: '27%',
+    width: '60%',
+    height: '25%',
     borderRadius: 15,
+  },
+
+  card: {
+    backgroundColor: '#D9D9D9',
+    width: '60%',
+    height: '17%',
+    borderRadius: 15,
+    alignItems: 'center',
   },
 });

@@ -34,15 +34,15 @@ export default function Home ({ navigation }) {
                     <TouchableWithoutFeedback onPress={() => navigation.navigate('Equipe')}>
                         <Image source={mato} style={{width: '60%', height: '100%', borderRadius: 13,}}></Image>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback onPress={() => navigation.navgate('Equipe')}>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Equipe')}>
                         <Image source={IFCLogo} style={{width: '40%', height: '100%', borderRadius: 13,}}></Image>
                     </TouchableWithoutFeedback>
                 </View>
                 <View style={styles.card}>
-                    <TouchableWithoutFeedback onPress={() => navigation.navgate('Equipe')}>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Equipe')}>
                         <Image source={mato} style={{width: '60%', height: '100%', borderRadius: 13,}}></Image>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback onPress={() => navigation.navgate('Equipe')}>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Equipe')}>
                         <Image source={IFCLogo} style={{width: '40%', height: '100%', borderRadius: 13,}}></Image>
                     </TouchableWithoutFeedback>
                 </View>
